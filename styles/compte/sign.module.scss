@@ -1,0 +1,156 @@
+
+.nav {
+    position: relative;
+    z-index: 100;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+}
+
+#languageSelection {
+    position: absolute;
+    right: 0;
+}
+.shape {
+    position: relative;
+    bottom: 400px;
+    z-index: -1;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateY(-12px);
+        margin-top: 20px;
+        button {
+            background-color: var(--back);
+            margin-top: 15px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+        }
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        place-content: center;
+    }
+}
+.card {
+    width: 360px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    z-index: 999999;
+    h5 {
+        background-color: var(--back);
+        font-family: var(--font);
+        color: rgba(0, 0, 0, 0.534);
+        width: 100%;
+        height: 80px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h6 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 40px;
+        transform: translateY(-12px);
+    }
+    form {
+        button {
+            background-color: var(--back);
+            transition: .1s ease;
+            &:hover {
+                background-color: #d9d9d9ba;
+            }
+        }
+        input {
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding-left: 5px;
+            font-weight: bold;
+            font-family: var(--font);
+            label {
+                font-family: var(--font);
+            }
+        }
+        .inputfield {
+            display: flex;
+            align-items: baseline;
+            max-width: 290px;
+            margin-top: 15px;
+            .check {
+                width: 10px;
+                height: 10px;
+                position: relative;
+                display: block;
+                cursor: pointer;
+                input[type="checkbox"] {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+                .checkmark {
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #4f00dc;
+                    display: block;
+                    position: relative;
+                    border-radius: 2px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        width: 5px;
+                        height: 2px;
+                        border: 2px solid;
+                        border-color: transparent transparent #fff #fff;
+                        transform: rotate(-45deg);
+                        display: none;
+                    } 
+                }
+            }
+            .terms1 {
+                font-size: 14px;
+                color: #26262bd9;
+                padding-left: 15px;
+                font-size: 13px;
+            }
+            .terms2 {
+                font-size: 14px;
+                color: #26262bd9;
+                padding-left: 15px;
+                font-size: 13px;
+                width: 100%;
+                a {
+                    color: #4f00dcbd;
+                }
+            }
+        }
+    }
+}
+
+
+
